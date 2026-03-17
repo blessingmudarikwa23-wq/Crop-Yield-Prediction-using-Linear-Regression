@@ -5,9 +5,13 @@ Author: Blessing Mudarikwa
 Role: Aspiring Data Engineer | Data Analyst
 
 import pandas as pd
+
 import matplotlib.pyplot as plt
+
 from sklearn.model_selection import train_test_split
+
 from sklearn.linear_model import LinearRegression
+
 from sklearn.metrics import mean_squared_error, r2_score
 
 # Load dataset
@@ -41,10 +45,15 @@ print(f"R² Score: {r2:.4f}")
 
 # 📈 Visualization
 plt.figure()
+
 plt.scatter(X_test, y_test)
+
 plt.plot(X_test, y_pred)
+
 plt.xlabel("Rainfall")
+
 plt.ylabel("Standard Yield")
+
 plt.title("Linear Regression: Rainfall vs Crop Yield")
 plt.show()
 
