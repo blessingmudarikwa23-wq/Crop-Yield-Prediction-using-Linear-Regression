@@ -4,6 +4,8 @@ Author: Blessing Mudarikwa
 
 Role: Aspiring Data Engineer | Data Analyst
 
+Tools: Python, Pandas, Scikit-learn, Matplotlib
+
 import pandas as pd
 
 import matplotlib.pyplot as plt
@@ -39,8 +41,11 @@ r2 = r2_score(y_test, y_pred)
 
 print("📊 Model Performance")
 print(f"Coefficient (Slope): {model.coef_[0]:.4f}")
+
 print(f"Intercept: {model.intercept_:.4f}")
+
 print(f"Mean Squared Error: {mse:.4f}")
+
 print(f"R² Score: {r2:.4f}")
 
 # 📈 Visualization
